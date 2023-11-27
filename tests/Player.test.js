@@ -1,4 +1,4 @@
-import Player from '../src/player.js'
+import Player from '../src/Player.js'
 
 describe('Player class', () => {
   it('should be defined', () => {
