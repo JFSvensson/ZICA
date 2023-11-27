@@ -1,0 +1,27 @@
+{
+  "name": "zica",
+  "version": "0.1.0",
+  "description": "Zombie Island Coconut Attack - A game devolped using TDD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JFSvensson/ZICA.git"
+  },
+  "keywords": [
+    "game",
+    "zombie",
+    "TDD"
+  ],
+  "author": "Fredrik Svensson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JFSvensson/ZICA/issues"
+  },
+  "homepage": "https://github.com/JFSvensson/ZICA#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
