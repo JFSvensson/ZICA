@@ -6,4 +6,11 @@ describe('Player class', () => {
 
     expect(player).toBeDefined()
   })
+
+  it('should have an initial position', () => {
+    const player = new Player()
+    const position = player.getPosition()
+
+    expect(position).toBeDefined()
+  })
 })
