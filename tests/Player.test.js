@@ -1,21 +1,23 @@
 import Player from '../src/Player.js'
 
 describe('Player class', () => {
-  it('should be defined', () => {
-    const player = new Player()
+  let player
 
+  beforeEach(() => {
+    player = new Player()
+  })
+
+  it('should be defined', () => {
     expect(player).toBeDefined()
   })
 
   it('should have an initial position', () => {
-    const player = new Player()
     const position = player.getPosition()
 
     expect(position).toBeDefined()
   })
 
   it('should change position positively along the x-axis', () => {
-    const player = new Player()
     const initialPosition = { ...player.getPosition() }
     player.moveRight()
 
@@ -25,7 +27,6 @@ describe('Player class', () => {
   })
 
   it('should change position negatively along the x-axis', () => {
-    const player = new Player()
     const initialPosition = { ...player.getPosition() }
     player.moveLeft()
 
@@ -35,7 +36,6 @@ describe('Player class', () => {
   })
 
   it('should change position positively along the y-axis', () => {
-    const player = new Player()
     const initialPosition = { ...player.getPosition() }
     player.moveUp()
 
@@ -45,7 +45,6 @@ describe('Player class', () => {
   })
 
   it('should change position negatively along the y-axis', () => {
-    const player = new Player()
     const initialPosition = { ...player.getPosition() }
     player.moveDown()
 
