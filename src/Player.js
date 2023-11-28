@@ -12,6 +12,10 @@ class Player {
     this.position.x += 1
   }
 
+  moveLeft() {
+    this.position.x -= 1
+  }
+
 }
 
 export default Player
