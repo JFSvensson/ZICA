@@ -14,7 +14,7 @@ describe('Player class', () => {
     expect(position).toBeDefined()
   })
 
-  it('should change position positively along the x-axis when right arrow is pressed', () => {
+  it('should change position positively along the x-axis', () => {
     const player = new Player()
     const initialPosition = { ...player.getPosition() }
     player.moveRight()
@@ -22,6 +22,16 @@ describe('Player class', () => {
     const newPosition = player.getPosition()
 
     expect(newPosition.x).toBeGreaterThan(initialPosition.x)
+  })
+
+  it('should change position negatively along the x-axis', () => {
+    const player = new Player()
+    const initialPosition = { ...player.getPosition() }
+    player.moveLeft()
+
+    const newPosition = player.getPosition()
+
+    expect(newPosition.x).toBeLessThan(initialPosition.x)
   })
 
 })
