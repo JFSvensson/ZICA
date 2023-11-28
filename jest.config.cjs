@@ -7,12 +7,11 @@ module.exports = {
   coverageProvider: 'v8',
   collectCoverageFrom: [
     '**/*.{js,jsx}',
-    '!**/node_modules/**',
-    '!**/vendor/**',
   ],
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/vendor/',
+    '/coverage/'
   ],
   coverageReporters: [
     'json',
