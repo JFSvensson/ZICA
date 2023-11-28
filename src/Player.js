@@ -8,6 +8,10 @@ class Player {
     return this.position
   }
 
+  moveRight() {
+    this.position.x += 1
+  }
+
 }
 
 export default Player
