@@ -19,7 +19,11 @@ class Player {
   moveUp() {
     this.position.y += 1
   }
-  
+
+  moveDown() {
+    this.position.y -= 1
+  }
+
 }
 
 export default Player
