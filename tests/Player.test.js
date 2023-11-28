@@ -44,4 +44,14 @@ describe('Player class', () => {
     expect(newPosition.y).toBeGreaterThan(initialPosition.y)
   })
 
+  it('should change position negatively along the y-axis', () => {
+    const player = new Player()
+    const initialPosition = { ...player.getPosition() }
+    player.moveDown()
+
+    const newPosition = player.getPosition()
+
+    expect(newPosition.y).toBeLessThan(initialPosition.y)
+  })
+
 })
