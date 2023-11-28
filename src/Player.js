@@ -16,6 +16,10 @@ class Player {
     this.position.x -= 1
   }
 
+  moveUp() {
+    this.position.y += 1
+  }
+  
 }
 
 export default Player
